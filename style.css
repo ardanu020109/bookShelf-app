@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+html, body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Kanit', sans-serif;
+    background-color: rgb(158, 158, 236);
+}
+
+.header {
+    text-align: center;
+    font-weight: bold;
+    padding: 15px;
+    font-size: 28px;
+    background-color: #000080;
+    color: white;
+}
+
+main{
+    overflow: auto;
+    padding: 12px;
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #000080;
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
+    margin: 10px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+}
+
+.form-group label {
+    font-size: 18px;
+    font-weight: 300;
+    color: #000080;
+    margin-bottom: 2px;
+}
+
+.form-group input {
+    border: 1px black solid;
+    padding: 6px;
+    margin-bottom: 4px;
+    font-size: 14px;
+}
+
+.check-input {
+    margin-bottom: 8px;
+    font-size: 18px;
+    color: #000080;
+    font-weight: 700;
+}
+
+.check-input input[type="checkbox"]:checked {
+    border: #000080 solid 2px;
+    background-color: white;
+}
+
+.btn-submit {
+    border: solid 2px #000080;
+    padding: 5px;
+    margin-top: 6px;
+    background-color: white;
+    font-weight: 500;
+    color: black;
+    border-radius: 8px;
+}
+
+.btn-submit:hover {
+    background-color: #000080;
+    color: white;
+    transition: all .3s
+}
+
+.titleContainer {
+    font-size: 24px;
+    text-align: center;
+}
+
+.searchContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px;
+    border-radius: 20px;
+    margin: 10px;
+    border: solid #000080 2px;
+    background-color: white;
+}
+
+.searchBook {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+    width: 100%;
+    padding: 20px;
+}
+
+.searchBook label {
+    color: #000080;
+    font-size: 18px;
+}
+
+.searchBook input[type="text"] {
+    border: 1px black solid;
+    padding: 6px;
+    margin-bottom: 4px;
+    font-size: 14px;
+}
+
+.libraryContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 20px;
+    border: solid #000080 2px;
+}
+
+.btn-search {
+    width: 75px;
+    text-align: center;
+    border: #000080 solid 2px;
+    background-color: aliceblue;
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 12px;
+    padding: 8px;
+    border-radius: 12px;
+    color: black;
+    text-decoration: unset;
+}
+
+.btn-search:hover{
+    background-color: #000080;
+    color: white;
+    transition: all .3s;
+}
+
+.list-items {
+    padding: 20px;
+    border-radius: 8px;
+    background-color: rgb(158, 158, 236);
+    box-shadow: 2px 4px rgb(184, 179, 179);
+    margin-bottom: 12px;
+}
+
+.book-title {
+    color: #000080;
+    font-variant: normal;
+    font-size: 22px;
+}
+
+.book-author, .book-year {
+    font-size: 18px;
+}
+
+.btn-read, .btn-unread {
+    width: 120px;
+    margin-right: 12px;
+    border: rgb(16, 158, 16) solid 2px;
+    padding: 5px;
+    text-align: center;
+    background-color: white;
+    color: rgb(16, 158, 16);
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.btn-delete {
+    width: 120px;
+    font-weight: bold;
+    color: red;
+    background-color: white;
+    border: solid red 2px;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.btn-read:hover {
+    background-color: rgb(16, 158, 16);
+    color: white;
+    transition: all .3s;
+}
+
+.btn-unread:hover{
+    background-color: rgb(16, 158, 16);
+    color: white;
+    transition: all .3s;
+}
+
+.btn-delete:hover{
+    background-color: red;
+    color: white;
+    transition: all .3s;
+}
+
+.reset {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+.reset:hover{
+    color: white;
+}
+
+footer {
+    background-color: #000080;
+    color: white;
+    padding: 14px;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 1000px) {
+    .header {
+        font-size: 22px;
+    }
+
+    .titleContainer {
+        font-size: 20px;
+    }
+
+    .form-group label {
+        font-size: 16px;
+    }
+
+    .form-group input {
+        font-size: 14px;
+    }
+
+    .book-title {
+        font-size: 18px;
+    }
+
+    .book-author, .book-year{
+        font-size: 16px;
+    }
+    
+    .btn-delete, .btn-read, .btn-unread {
+        width: 75px;
+        font-size: 14px;
+    }
+
+    .check-input {
+        font-size: 14px;
+    }
+
+    .searchBook label {
+        text-align: 14px;
+    }
+
+    footer{
+        font-size: 14px;
+    }
+}
+
+
+
+
