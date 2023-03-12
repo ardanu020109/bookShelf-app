@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bookshelf Apps</title>
+  <script src="js/script.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!--Bagian Head atau Kop Dari Website-->
+    <header class="header">
+        <h1 class="Titleweb">BookShelf Apps</h1>
+    </header>
+
+    <!--Konten Website-->
+    <main>
+
+        <!--Bagian untuk menginput data buku-->
+        <div class="inputContainer">
+            <h2 class="titleContainer" >Tambahkan Buku Favorite Kalian</h2>
+            <form id="addBook">
+                <div class="form-group">
+                    <label for="title">Judul</label>
+                    <input id="title" type="text" autocomplete="off" placeholder="Masukkan Judul Buku" required>
+                </div>
+                <div class="form-group">
+                    <label for="author">Penulis</label>
+                    <input id="author" type="text" autocomplete="off" placeholder="Masukkan Penulis Buku" required>
+                </div>
+                <div class="form-group">
+                    <label for="year">Tahun</label>
+                    <input id="year" type="number" autocomplete="off" placeholder="Masukkan Tahun Terbit" required>
+                </div>
+                <div class="check-input">
+                    <label for="checkbook">Selesai dibaca</label>
+                    <input id="checkbook" class="check-book" type="checkbox">
+                </div>
+                <input type="submit" id="submitAdd" class="btn-submit" value="Tambahkan Buku">
+            </form>
+        </div>
+
+        <!--Bagian untuk mencari buku-->
+        <div class="searchContainer">
+            <h2 class="titleContainer">Cari Buku</h2>
+            <form id="searchBook" class="searchBook">
+                <label for="bookTitle">Masukkan Judul Buku</label>
+                <input id="bookTitle" type="text" required autocomplete="off" >
+                <input type="submit" id="submitSearch" class="btn-search" value="Cari Buku">
+                <button class="btn-search"><a class="reset" href="index.html">Reset</a></button> 
+            </form>
+        </div>
+
+        <!--Perpustakaan Buku yang belum selesai dibaca-->
+        <div class="libraryContainer">
+            <h2 class="titleContainer">Belum selesai dibaca</h2>
+            <div id="unreadBook" class="list-book"></div>
+        </div>
+
+        <!--Perpustakaan Buku yang selesai dibaca-->
+        <div class="libraryContainer">
+            <h2 class="titleContainer">Selesai dibaca</h2>
+            <div id="readBook" class="list-book">
+            </div>
+        </div>
+    </main>
+
+    <!--Footer website-->
+    <footer>
+        &copy; 2023, Belajar Front-End Pemula, Ardanu
+    </footer>
+</body>
+
+</html>
